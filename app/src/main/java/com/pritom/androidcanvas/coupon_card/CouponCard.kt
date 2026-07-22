@@ -38,7 +38,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun CouponCard(
     offer: String = "30%",
-    validTill: String = "",
+    validTill: String = "VALID TILL JULY 2026",
     strokeColor: Color = Color(0xFFFFFFFF),
     offBackColor: Color = Color(0xFFEAE9E9),
     lineColor: Color = Color(0xFFF9F9F9),
@@ -129,7 +129,7 @@ fun CouponCard(
                     text = "Shopping Coupon",
                     modifier = Modifier,
                     style = TextStyle(
-                        fontSize = 5.sp,
+                        fontSize = 6.sp,
                         letterSpacing = TextUnit(3f, TextUnitType.Sp),
                     ),
                     textAlign = TextAlign.Center,
@@ -156,7 +156,7 @@ fun CouponCard(
                     modifier = Modifier,
                     color = Color.White,
                     style = TextStyle(
-                        fontSize = 5.sp,
+                        fontSize = 6.sp,
                         letterSpacing = TextUnit(2f, TextUnitType.Sp),
                     ),
                     textAlign = TextAlign.Center,
@@ -172,11 +172,11 @@ fun CouponCard(
                 )
 
                 Text(
-                    text = "VALID TILL DECEMBER 2026",
+                    text = validTill,
                     modifier = Modifier,
                     color = Color.White,
                     style = TextStyle(
-                        fontSize = 5.sp,
+                        fontSize = 6.sp,
                         letterSpacing = TextUnit(2f, TextUnitType.Sp),
                     ),
                     textAlign = TextAlign.Center,
