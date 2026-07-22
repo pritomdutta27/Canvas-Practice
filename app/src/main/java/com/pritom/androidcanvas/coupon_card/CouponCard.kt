@@ -1,5 +1,6 @@
 package com.pritom.androidcanvas.coupon_card
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -24,7 +25,6 @@ import androidx.compose.ui.graphics.PathEffect
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.clipRect
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -43,7 +43,7 @@ fun CouponCard(
     offBackColor: Color = Color(0xFFEAE9E9),
     lineColor: Color = Color(0xFFF9F9F9),
     couponBack: Color = Color(0xFF4CAF50),
-    modifier: Modifier = Modifier, // Allow passing in additional modifiers
+    @SuppressLint("ModifierParameter") modifier: Modifier = Modifier, // Allow passing in additional modifiers
 ) {
     Box(
         modifier = modifier
